@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BubbleBee Chatbot</title>
+        <link rel="shortcut icon" href="../images/favi.png" />
+        
+        <!-- CSS links -->
+        <!-- <link rel="stylesheet" href="../css/reset.css" /> -->
+        <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+        <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+        <link rel="stylesheet" type="text/css" href="../css/chat.css" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <section class="container">
+            <div class="flex text-center">
+                <a href="../index.html"><img id="img-chatbot-menu" src="../images/logo/art-sem_sombra-v3.png" alt="[Assistente Virtual BubbleBee]"></a>
+                <h2 class="title">BubbleBee</h2>
+            </div>
+            <div class="chat-container"></div>
+            <input type="text" id="question" name="question" class="field"
+                placeholder="Type your question or message to convert in audio" />
+            <div class="controls">
+                <button id="sendQuestion">Send</button>
+                <button id="getVoiceButton">Get Voice</button>
+                <button id="recordButton">Record</button>
+                <button id="pauseButton" disabled>Pause</button>
+                <button id="stopButton" disabled>Stop</button>
+            </div>
+        </section>
+        <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+        <!-- Para a versão dois utilizar o script main.js -->
+        <script type="text/javascript" src="../js/assistant.js"></script>
+        <script type="text/javascript" src="scripts/tts.js"></script>
+        <script type="text/javascript" src="scripts/stt.js"></script>
+    </body>
+</html>
