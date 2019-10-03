@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BubbleBee - Comece agora seu assistente virtual!</title>
+    <link rel="shortcut icon" href="../images/favi.png" />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- MOBILE FIRST -->
+    <nav class="navbar navbar-expand-md" id="inicio">
+        <a href="../index.html"><img id="img-chatbot-menu" src="../images/logo/art-sem_sombra-v3.png" alt="[Assistente Virtual BubbleBee]"></a>
+      <a class="navbar-brand" href="../index.html">BubbleBee</a>
+      <button class="navbar-toggler nav_btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+        <i class="fas fa-bars icon-menu"></i>
+      </button>
+      <div
+        class="collapse navbar-collapse nav-menu navbar-right"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="duvidas.html"
+              ><i class="icon-menu fas fa-bookmark"></i>Dúvidas frequentes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html"
+              ><i class="icon-menu fas fa-question-circle"></i>Sobre</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chatbot.html"
+              ><i class="icon-menu fas fa-play"></i>Começar BubbleBee</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"
+              ><i class="icon-menu fas fa-id-card"></i>Cadastro/Login</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- DESTAQUE CONTEUDO -->
+    <h2 class="title_sobre title"><span>Converse já com o BubbleBee!</span></h2>
+    <h5 class="title_sobre" >Veja os modelos abaixo:</h5>
+    <section class="menu menu_sobre">
+      <article class="menu_item_chat disabled_chat">
+        <h3><i class="fas fa-exclamation-triangle"></i></i>Português</h3>
+        <p>Em construção...</p>
+      </article>
+      <article class="menu_item_chat disabled_chat">
+        <h3><i class="fas fa-exclamation-triangle"></i>Matemática</h3>
+        <p>Em construção...</p>
+      </article>
+      <article class="menu_item_chat enabled_chat">
+        <h3><i class="fas fa-tools"></i>Algoritmo</h3>
+        <p>Aguarde! Em breve ...</p>
+    </section>
+
+    <article class="container-fluid">
+      <div class="container">
+      <div class="row">
+        <div id="img_chatbot_cont" class="col-md-6">
+          <img id="img-chatbot" src="../images/logo/art-sombra-v3.png" alt="[Imagem Chatbot BubbleBee]" title="Imagem Chatbot BubbleBee">
+        </div>
+        <div class="col-md-6 destaque_chatbot">
+          <h3 class="title title_chatbot">Prazer, sou BubbleBee! Estou aqui para te ajudar!</h3>
+          <p>Inicie a qualquer momento uma conversa com o BubbleBee, seu assistente virtual, para tirar suas dúvidas! Comece agora!</p>
+          <a class="btn-main-amarelo" href="../index.html"><i class="icon_menu_item fas fa-play"></i>Comece agora!</a>
+        </div>
+      </div>
+    </div>
+    </article>
+
+    <!-- RODAPE -->
+    <hr>
+    <footer class="footer_main">
+      <div class="container">
+        <p>“A tecnologia move o mundo.” - Steve Jobs</p>
+        <p>BubbleBee - &copy; Todos os direitos reservados.</p>
+        <a href="#inicio" class="btn"><i class="fas fa-arrow-circle-up"></i></a>
+      </div>
+    </footer>
+    <!-- /.RODAPE -->
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mask.js"></script>
+  </body>
+</html>

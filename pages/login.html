@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BubbleBee - Comece agora seu assistente virtual!</title>
+    <link rel="shortcut icon" href="../images/favi.png" />
+
+    <!-- CSS links -->
+    <!-- <link rel="stylesheet" href="../css/reset.css" /> -->
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- MOBILE FIRST -->
+    <nav class="navbar navbar-expand-md" id="inicio">
+      <a href="../index.html"
+        ><img
+          id="img-chatbot-menu"
+          src="../images/logo/art-sem_sombra-v3.png"
+          alt="[Assistente Virtual BubbleBee]"
+      /></a>
+      <a class="navbar-brand" href="../index.html">BubbleBee</a>
+      <span></span>
+      <button
+        class="navbar-toggler nav_btn"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars icon-menu"></i>
+      </button>
+      <div
+        class="collapse navbar-collapse nav-menu navbar-right"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="duvidas.html"
+              ><i class="icon-menu fas fa-bookmark"></i>Dúvidas frequentes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html"
+              ><i class="icon-menu fas fa-question-circle"></i>Sobre</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chatbot.html"
+              ><i class="icon-menu fas fa-play"></i>Começar BubbleBee</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"
+              ><i class="icon-menu fas fa-id-card"></i>Cadastro/Login</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- DESTAQUE CONTEUDO -->
+    <section class="container-fluid" id="cad">
+      <div class="row">
+        <form class="col-md-4" id="form-cadastro" action="../index.html">
+          <h1 class="title">Entrar</h1>
+          <div class="question">
+            <input
+              type="email"
+              name="email"
+              placeholder="ex. seuemail@email.com"
+              required
+            />
+            <label>E-mail*</label>
+          </div>
+          <div class="question">
+            <input
+              type="password"
+              name="senha"
+              placeholder="Mínimo 6 caracteres"
+              minlength="6"
+              required
+            />
+            <label>Senha*</label>
+          </div>
+          <div class="row">
+            <small class="col-sm-5">* Informações obrigatórias</small>
+            <a class="col-sm text-right" href="forgot.html"
+              >Esqueceu a senha ?</a
+            >
+          </div>
+          <button>Entrar</button>
+        </form>
+        <form class="col-md-5" id="form-cadastro" action="../index.html">
+          <h1 class="title">Cadastrar</h1>
+          <div id="alerta" class="alerta align-content-center">
+            <p>
+              <strong>Parabens!!</strong> Seu cadastro foi concluido com sucesso
+            </p>
+          </div>
+          <div class="question">
+            <input
+              type="email"
+              name="email"
+              placeholder="ex. seuemail@email.com"
+              required
+            />
+            <label>E-mail*</label>
+          </div>
+          <div class="question">
+            <input
+              type="password"
+              name="senha"
+              placeholder="Mínimo 6 caracteres"
+              minlength="6"
+              required
+            />
+            <label>Nova senha*</label>
+          </div>
+          <div class="question">
+            <input
+              type="password"
+              name="conf_senha"
+              placeholder="Mínimo 6 caracteres"
+              minlength="6"
+              required
+            />
+            <label>Confirme a senha*</label>
+          </div>
+          <div class="question">
+            <input
+              type="text"
+              name="cpf"
+              id="cpf"
+              placeholder="ex. 999.999.999-99"
+              required
+            />
+            <label>CPF*</label>
+          </div>
+          <div class="question">
+            <input
+              type="text"
+              name="data_nasc"
+              placeholder="ex. 99/99/9999"
+              id="data_nasc"
+              required
+            />
+            <label>Data de Nascimento*</label>
+          </div>
+          <div class="row">
+            <small class="col-sm-5">* Informações obrigatórias</small>
+            <a class="col-sm text-right" href="forgot.html"
+              >Esqueceu a senha ?</a
+            >
+          </div>
+          <button id="cad">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- RODAPE -->
+    <hr />
+    <footer class="footer_main">
+      <div class="container">
+        <p>“A tecnologia move o mundo.” - Steve Jobs</p>
+        <p>BubbleBee - &copy; Todos os direitos reservados.</p>
+        <a href="#inicio" class="btn"><i class="fas fa-arrow-circle-up"></i></a>
+      </div>
+    </footer>
+    <!-- /.RODAPE -->
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mask.js"></script>
+    <script>
+      $(document).ready(function() {
+        let cpf = $("#cpf");
+        let data_nasc = $("#data_nasc");
+        cpf.mask("000.000.000-00");
+        data_nasc.mask("00/00/0000");
+      });
+
+      $(document).ready(function() {
+        $("#cad").click(function() {
+          //$("#div1").fadeIn();
+          $("#alerta").fadeIn("slow");
+          //$("#div3").fadeIn(3000);
+        });
+      });
+    </script>
+  </body>
+</html>
